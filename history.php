@@ -1,3 +1,7 @@
+<?php
+include 'inc/header.php'
+?>
+
 <!DOCTYPE html>
 <html>
 <title>Internet Addiction</title>
@@ -31,7 +35,8 @@
 <body>
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large"><a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a><a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large"><a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a><a href="index.html"
+        class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
       <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">History</a><a href="test.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Test</a><a href="causes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Causes</a>
       <a href="video.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Video</a>
     </div>
@@ -42,7 +47,7 @@
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-twothird">
-        <h1>Internet Addiction Video</h1>
+        <h1>What Is Internet Addiction?</h1>
         <h5 class="w3-padding-32">Internet addiction is described as an impulse control disorder, which does not involve use of an intoxicating drug and is very similar to pathological gambling. Some Internet users may develop an emotional attachment to on-line friends and activities
           they create on their computer screens. Internet users may enjoy aspects of the Internet that allow them to meet, socialize, and exchange ideas through the use of chat rooms, social networking websites, or "virtual communities." Other Internet
           users spend endless hours researching topics of interest Online or "blogging". Blogging is a contraction of the term "Web log", in which an individual will post commentaries and keep regular chronicle of events. It can be viewed as journaling

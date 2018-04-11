@@ -1,3 +1,7 @@
+<?php
+include 'inc/header.php'
+?>
+
 <!DOCTYPE html>
 <html>
 <title>Internet Addiction</title>

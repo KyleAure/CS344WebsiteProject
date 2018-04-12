@@ -1,0 +1,46 @@
+/* Tristin's video.php CSS */
+#video-one-container{
+    background-color: aliceblue;
+    padding: 1em;
+    margin: auto;
+    width: 90%;
+}
+#video-one-title{
+    font-size: 2em;
+    color: dimgrey;
+    margin: auto;
+}
+#video-one{
+    background-color: lightgray;
+    margin: auto;
+}
+#video-two-container{
+    background-color: aliceblue;
+    padding: 1em;
+    margin: auto;
+    width: 90%;
+}
+#video-two-title{
+    font-size: 2em;
+    color: dimgrey;
+    margin: auto;
+}
+#video-two{
+    background-color: lightgray;
+    margin: auto;
+}
+#video-three-container{
+    background-color: aliceblue;
+    padding: 1em;
+    margin: auto;
+    width: 90%;
+}
+#video-three-title{
+    font-size: 2em;
+    color: dimgrey;
+    margin: auto;
+}
+#video-three{
+    background-color: lightgray;
+    margin: auto;
+}

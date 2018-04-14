@@ -1,17 +1,8 @@
-<?php
-function printHeader(){
-  
-    $string = '';
-    $string .= '<nav>';
-    $string .= '<ul>';
-    $string .= '<li> Home </li>';
-    $string .= '<li> History </li>';
-    $string .= '<li> Tips and Tricks </li>';
-    $string .= '<li> Instructional Video </li>';
-    $string .= '<li> Contact Us </li>';
-    $string .= '</ul>';
-    $string .= '</nav>';
-  
-    return $string;
-  }
-?>
+<div class="topnav" id="myTopnav">
+  <a href="index.php" >Home</a>
+  <a href="history.php">History</a>
+  <a href="tips.php">Tips and Tricks</a>
+  <a href="video.php">Instructional Video</a>
+  <a href="contact.php">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="updateNavClass()">&#9776;</a>
+</div>

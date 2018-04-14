@@ -1,48 +1,28 @@
 <?php
-include 'inc/header.php'
+//TODO: Change reporting method after testing has been completed.
+error_reporting(E_ALL);
+ini_set('display_errors', E_ALL);
+
+//Other PHP includes should go here
+
 ?>
 
 <!DOCTYPE html>
 <html>
-<title>Internet Addiction</title>
+<title>History</title>
+<!-- Meta tags -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Style links -->
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/stylesheet.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Arial", sans-serif
-  }
-
-  .w3-bar,
-  h1,
-  button {
-    font-family: "Arial", sans-serif
-  }
-
-  .fa-anchor,
-  .fa-coffee {
-    font-size: 200px
-  }
-</style>
+<!-- Script links -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/header.js"></script>
+<!-- Include Header -->
+<?php include_once 'inc/header.php'; ?>
 
 <body>
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large"><a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a><a href="index.html"
-        class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">History</a><a href="test.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Test</a><a href="causes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Causes</a>
-      <a href="video.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Video</a>
-    </div>
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"><a href="history.html" class="w3-bar-item w3-button w3-padding-large">History</a><a href="test.html" class="w3-bar-item w3-button w3-padding-large">Test</a><a href="causes.html" class="w3-bar-item w3-button w3-padding-large">Causes</a><a href="video.html" class="w3-bar-item w3-button w3-padding-large">Video</a></div>
-  </div>
   <!-- First Grid -->
   <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">

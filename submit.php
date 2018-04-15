@@ -3,7 +3,29 @@
 error_reporting(E_ALL);
 ini_set('display_errors', E_ALL);
 
-//Other PHP includes should go here
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'inc/phpmailer/Exception.php';
+require 'inc/phpmailer/PHPMailer.php';
+require 'inc/phpmailer/SMTP.php';
+
+//There is where email is constructed and sent
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Host = '172.17.17.100';
+$mail->Port = 25;
+$mail->SMTPAuth = false;
+$mail->SMTPSecure = false;
+$mail->setFrom('no-reply@qwep.com', 'Kyle Aure');
+$mail->addAddress($_POST['email'], $_POST['firstname'] . " " . $_POST['lastname']);
+$mail->Subject  = 'A warm welcome from Internet Addictions';
+$mail->isHTML();
+$mail->Body = '<h1>Internet Additions</h1><p>You will now recieve emails from Internet Addictions.</p>';
+if(!$mail->send()) {
+  echo 'Message was not sent.';
+  echo 'Mailer error: ' . $mail->ErrorInfo;
+}
 
 ?>
 

@@ -10,7 +10,6 @@ function updateNavClass() {
     }
 }
 
-
 /*On Load determine which page should be active*/
 $(function () {
     //remove all other active classes
@@ -21,8 +20,6 @@ $(function () {
 
     //get page name and set that link to active
     var pageName = document.location.href.match(/[^\/]+$/)[0];
-    console.log(pageName);
     var link = $('a[href="' + pageName + '"]');
-    console.log(link);
     link.toggleClass("active");
 });

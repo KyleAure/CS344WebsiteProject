@@ -50,6 +50,7 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+    z-index: 10;
 }
 
 /* Style the links inside the navigation bar */
@@ -87,7 +88,7 @@
       float: right;
       display: block;
     }
-  }
+}
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
@@ -102,4 +103,175 @@
       display: block;
       text-align: left;
     }
-  }
+}
+
+/*Kyle's styling for contact form */
+table {  
+    width: 90%;
+    margin: 0 auto;
+ }
+ table tbody td{
+    vertical-align: top;
+ }
+ 
+ legend {
+    background-color: #616161 ;
+    color: white;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+ }
+ fieldset {
+    margin: 1em auto;
+    background-color: #F5F5F5;
+    width: 70%;
+ }
+ form p {
+    margin-top: 0.5em;
+ }
+ form input[type="text"], form input[type="email"], form input[type="tel"], form select {
+     font-size: 16px;
+     height: 24px;
+     padding: 3px;
+ }
+ form select {
+     height: 30px;
+ }
+ #firstname, #lastname, #email, #phonenumber, #references  { 
+     width: 100% }
+ 
+ .box {
+    border: 1pt solid #9E9E9E;
+    padding: 0.5em;
+    margin-bottom: 0.4em;
+ }
+ 
+ .rectangle {
+    background-color: #BDBDBD;
+    padding: 0.5em;
+    margin-bottom: 5px;
+ }
+ .centered {
+    text-align: center;
+ }
+ .highlight {
+     background-color: #FFE0B2;
+ }    
+ .error {
+     background: #FFCDD2 url('../assets/error.png') no-repeat 98% center;
+     box-shadow: 0 0 5px #FF5252;
+     border-color: #FF1744;    
+ }
+ 
+ .button {
+   -webkit-border-radius: 3;
+   -moz-border-radius: 3;
+   border-radius: 3px;
+   height: 32px;
+   color: black;
+   font-size: 14px;
+   background: #FF9100;
+   padding: 5px 20px 5px 20px;
+   text-decoration: none;
+ }
+ 
+ .button:hover {
+   background: #FFAB40;
+   text-decoration: none;
+ }
+
+ /*Kyle's styling for contact form errors*/
+ #errors{
+    width: 90%;
+    margin: 0 auto;
+    background: #FFCDD2;
+    box-shadow: 0 0 5px #FF5252;
+    border-color: #FF1744;
+ }
+ #errors p{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+ }
+ #errorMessages p{
+     color: black;
+     font-size: 12px;
+     font-weight: normal;
+ }
+  
+/*Kyle's styling for submission form*/
+.bannerimage img{
+    width: 100%;
+    z-index: -1;
+}
+
+.bannerimage h1{
+    position: absolute;
+    top: 20vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 20px grey;
+    text-shadow: 0 0 5px white;
+    z-index: 5;
+}
+
+.bannerimage h2{
+    position: absolute;
+    top: 25vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 0 5px white;
+    z-index: 5;
+}
+
+.confirmRegistration{
+    width: 90%;
+    margin: 0 auto;
+}
+.confirmRegistration h1{
+    font-size: 48px;
+    font-weight: bold;
+    color:  #333;
+    text-align: center;
+}
+
+.confirmRegistration p{
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+}
+
+.socialmedia{
+    text-align: center;
+    margin: 5px;
+}
+
+.socialmedia li{
+    display: inline;
+    margin: 5px;
+}
+
+.socialmedia img{
+    height: 32px;
+    width: 32px;
+}
+
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+ @media screen and (max-width: 600px) {
+    .confirmRegistration h1{
+        font-size: 24px;
+    }
+    .confirmRegistration p{
+        font-size: 12px;
+    }
+}

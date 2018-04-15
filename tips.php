@@ -16,6 +16,8 @@ ini_set('display_errors', E_ALL);
 <!-- Style links -->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/stylesheet.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 <!-- Script links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/header.js"></script>

@@ -57,9 +57,6 @@ ini_set('display_errors', E_ALL);
 
         </article>
 
-        <!-- Footer -->
-        <?php echo printFooter(); ?>
-
     </body>
 
 </html>

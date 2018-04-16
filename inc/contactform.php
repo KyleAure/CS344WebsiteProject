@@ -6,7 +6,7 @@
 
     </div>
 </div>
-<!-- /inc/submit.php -->
+<!-- submit.php -->
 <form method="post" action="submit.php" id="contactForm">
     <fieldset>
         <legend>Contact Us</legend>
@@ -82,6 +82,13 @@
                         <option>Other</option>
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="customcenter">
+                    <div class="g-recaptcha centered" data-sitekey="6LePZVMUAAAAAEjWc_BX58W9CM9LGcE1eBXPMv_G"></div>
+                    </div>
+                <td>
             </tr>
             <tr>
                 <td>

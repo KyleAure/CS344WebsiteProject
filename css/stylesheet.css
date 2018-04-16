@@ -45,12 +45,14 @@
     margin: auto;
 }
 
-/*Kyle's Header Styling*/
+/*Kyle's Header Styling header.php*/
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
     z-index: 10;
+    /* Remove me if you want full nav bar*/
+    position: fixed;
 }
 
 /* Style the links inside the navigation bar */
@@ -81,7 +83,8 @@
     display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -90,7 +93,8 @@
     }
 }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -105,7 +109,21 @@
     }
 }
 
-/*Kyle's styling for contact form */
+/*Kyle's styling for contact form contact.php*/
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:25px;
+    position:relative;
+    height:200px;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    width:100%;
+    height: 200px;
+    position:absolute;
+}
+
 table {  
     width: 90%;
     margin: 0 auto;
@@ -154,9 +172,20 @@ table {
     padding: 0.5em;
     margin-bottom: 5px;
  }
+
  .centered {
+    display: block;
+    margin: auto;
+ }
+
+ .customcenter{
     text-align: center;
  }
+
+ .g-recaptcha {
+    display: inline-block;
+}
+
  .highlight {
      background-color: #FFE0B2;
  }    
@@ -183,26 +212,28 @@ table {
    text-decoration: none;
  }
 
- /*Kyle's styling for contact form errors*/
+ /*Kyle's styling for contact form errors contact.php*/
  #errors{
-    width: 90%;
+    width: 73%;
     margin: 0 auto;
+    padding: 12px;
     background: #FFCDD2;
     box-shadow: 0 0 5px #FF5252;
     border-color: #FF1744;
  }
  #errors p{
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
  }
  #errorMessages p{
      color: black;
-     font-size: 12px;
+     font-size: 16px;
+     padding: 5px;
      font-weight: normal;
  }
   
-/*Kyle's styling for submission form*/
+/*Kyle's styling for submission form submit.php*/
 .bannerimage img{
     width: 100%;
     z-index: -1;
@@ -266,7 +297,6 @@ table {
     width: 32px;
 }
 
- /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
  @media screen and (max-width: 600px) {
     .confirmRegistration h1{
         font-size: 24px;

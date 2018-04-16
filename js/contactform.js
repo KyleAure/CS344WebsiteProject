@@ -26,7 +26,7 @@ $(function () {
     }
 
     //when submit button is pressed
-    $('#register').on('click', function(event){
+    $("#register").on('click', function(event){
         //assume everything is valid and no errors occured
         var valid = true;
         var message = "";
@@ -47,13 +47,18 @@ $(function () {
             invalid("Last name is required.", '#lastname');
         }
 
-
         if (!emailCheck.test( $('#email').val() )) {
             invalid("Invalid email address.", '#email');
         }
 
         if(!phoneCheck.test( $('#phonenumber').val() )){
             invalid("Invalid phone number.", '#phonenumber');
+        }
+
+        //validate captcha
+        if(grecaptcha.getResponse() === ""){
+            valid = false;
+            message+='<p>Please check captcha.</p>'
         }
 
         //test if valid and if not prevent submission of form
@@ -68,7 +73,6 @@ $(function () {
             valid = false;
             message += '<p>' + errorMessage + '</p>';
             $(container).addClass('error');
-        };
-            
+        };   
     });
 });

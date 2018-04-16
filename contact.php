@@ -33,7 +33,7 @@ ini_set('display_errors', E_ALL);
 <?php include_once 'inc/header.php'; ?>
 
 <!-- Map under header -->
-<div class="map header">
+<div class="map-responsive">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11477.44770323063!2d-92.4224197!3d44.0139149!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6018fe3f0c03935!2sWinona+State+University!5e0!3m2!1sen!2sus!4v1523803859834" 
     onload="this.width=screen.width;" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
@@ -42,6 +42,7 @@ ini_set('display_errors', E_ALL);
 <body>
 <?php include 'inc/contactform.php'; ?>
 <script src="js/contactform.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 <!-- Footer -->

@@ -3,30 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', E_ALL);
 
+//mailer classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require 'inc/phpmailer/Exception.php';
-require 'inc/phpmailer/PHPMailer.php';
-require 'inc/phpmailer/SMTP.php';
-
-//There is where email is constructed and sent
-$mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->Host = '172.17.17.100';
-$mail->Port = 25;
-$mail->SMTPAuth = false;
-$mail->SMTPSecure = false;
-$mail->setFrom('no-reply@qwep.com', 'Kyle Aure');
-$mail->addAddress($_POST['email'], $_POST['firstname'] . " " . $_POST['lastname']);
-$mail->Subject  = 'A warm welcome from Internet Addictions';
-$mail->isHTML();
-$mail->Body = '<h1>Internet Additions</h1><p>You will now recieve emails from Internet Addictions.</p>';
-if(!$mail->send()) {
-  echo 'Message was not sent.';
-  echo 'Mailer error: ' . $mail->ErrorInfo;
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -76,4 +55,49 @@ if(!$mail->send()) {
         </div>
     </div>
 </body>
+
+<?php
+//doublecheck captcha
+$secretKey = '6LePZVMUAAAAAPeAHHX-DjiRxYQW5HJCzykI9dwW';
+
+if(!empty($_POST['g-recaptcha-response'])) {
+    $responseKey = $_POST['g-recaptcha-response'];
+}else{
+    $responseKey = "";
+}
+
+$userIP = $_SERVER['REMOTE_ADDR'];
+$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+$responseJSON = file_get_contents($url);
+$response = json_decode($responseJSON);
+
+//only send email if success
+if($response->success){
+    //mailer php files
+    require 'inc/phpmailer/Exception.php';
+    require 'inc/phpmailer/PHPMailer.php';
+    require 'inc/phpmailer/SMTP.php';
+    //This is where email is constructed and sent
+    $mail = new PHPMailer();
+    $mail->IsSMTP();
+    $mail->Host = '172.17.17.100';
+    $mail->Port = 25;
+    $mail->SMTPAuth = false;
+    $mail->SMTPSecure = false;
+    $mail->setFrom('no-reply@qwep.com', 'Kyle Aure');
+    $mail->addAddress($_POST['email'], $_POST['firstname'] . " " . $_POST['lastname']);
+    $mail->Subject  = 'A warm welcome from Internet Addictions';
+    $mail->isHTML();
+    $mail->Body = '<h1>Internet Additions</h1><p>You will now recieve emails from Internet Addictions.</p>';
+
+    if(!$mail->send()) {
+        echo 'Message was not sent.';
+        echo 'Mailer error: ' . $mail->ErrorInfo;
+    }
+
+} else {
+    //echo($responseJSON); use for testing
+    echo '<div id="errors"><p>Email failed to send.</p><p>Could not verify identity.</p></div>';
+}
+?>
 </html>

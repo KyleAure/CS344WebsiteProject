@@ -1,7 +1,8 @@
 /* Tristin's video.php CSS */
 #video-one-container{
     background-color: aliceblue;
-    padding: 3em;
+    padding: 1em;
+    padding-top: 3em;
     margin: auto;
     width: 90%;
 }

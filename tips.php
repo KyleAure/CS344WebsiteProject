@@ -4,6 +4,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', E_ALL);
 
 //Other PHP includes should go here
+//comment
+
 
 ?>
 

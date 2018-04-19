@@ -2,5 +2,5 @@
 	<br>
 	<hr>
 	<br>
-  <p>Indesicive Iguanas &copy; 2018</p>
+  <p>&copy; 2018 Indesicive Iguanas. No rights reserved</p>
 </div>

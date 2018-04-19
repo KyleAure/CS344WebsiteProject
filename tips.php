@@ -32,10 +32,6 @@ ini_set('display_errors', E_ALL);
   <a href="contact.php">Contact Us</a>
   <a href="javascript:void(0);" class="icon" onclick="updateNavClass()">&#9776;</a>
 </div>
-<header>
-     <h1><Strong>
-         TIPS AND TRICKS </Strong></h1>
-</header>
 
 
 <body>
@@ -50,34 +46,61 @@ ini_set('display_errors', E_ALL);
 <h2 style="text-align: left;"><strong><span style="color: red; font-size: 25px;">Five ways to reduce your time on the internet</span></strong></h2>
 <p style="text-align: left;"></p>
 
-          
+            
+      <form method="post" action="tips.php" id="fiveWays"
+      style= background-color:beige; >
+    <fieldset>
+        <table>        
 <h3 style="text-align: left;"><strong><span style="color: blue; font-size: 17px;">1) Limit Internet Usage </span></strong></h3>
 <p style="text-align: left;">
     Some options to limit internet usage include plug-ins like "StayFocused" for Google Chrome users and "LeechBlock" for Mozilla Firefox users. You can use these plug-ins to enter a certain amount of time you wish to spend on certain websites, especially ones that you spend most of your time on, when you go on these websites while past the time you entered it will give you a pop up reminder showing you this and sometimes just a reminder is all we need to help our addiction.
     
-    <p>If you are constantly using your phone or tablet to access the internet to view newly uploaded videos, facebook statues, tweets etc. It would be beneficial to turn off push notifications on your device for those certain apps so that your device isnt constantly calling for you to come to it. These are just a few options that may help limit internet usage.</p>
+    <p>If you are constantly using your phone or tablet to access the internet to view newly uploaded videos, facebook statues, tweets etc. It would be beneficial to turn off push notifications on your device for those certain apps so that your device isnt constantly calling for you to come to it. These are just a few options that may help limit internet usage.</p> </table>
+    </fieldset>
 
-
+<form method="post" action="tips.php" id="fiveWays"
+style= background-color:beige;>
+    <fieldset>
+        <table>   
 <h3 style="text-align: left;"><strong><span style="color: blue; font-size: 17px;">2) Develop Other Hobbies</span></strong></h3>
 <p style="text-align: left;">
 In todays world, life without internet seems like something unimaginable. To your surprise there are people out there who still live without internet, computers, smartphones etc. One way to help your addiction is to develop a new hobby. If your daily routine consists of going to work and coming home to surf the web, maybe you can develop an interest in doing something else like painting, reading, crafting, designing etc. Dig deep into your mind and find topics that interest you and see if one of those topics can become a hobby of some sort to keep you busy and to take your attention away from the internet.  
-          </p>
+          </p>   </table>
+    </fieldset>
+</form>
 
-
+<form method="post" action="tips.php" id="fiveWays"
+style= background-color:beige;>
+    <fieldset>
+        <table> 
 <h3 style="text-align: left;"><strong><span style="color: blue; font-size: 17px;">3) Tell your friends</span></strong></h3>
 <p style="text-align: left;">
-One great way to help yourself with internet addiction is to call for the help of your friends. Tell them about your problem and see if they can figure out a solution for you. Solutions may include spending more time with you, goin out for walks, doing projects together, reminding you about your addiction when they see you back at it etc. Friends can be a really great resource to help fight your addiction to the internet, in fact maybe both parties are battling the same addiction and there is many ways to help each other out.</p>
+One great way to help yourself with internet addiction is to call for the help of your friends. Tell them about your problem and see if they can figure out a solution for you. Solutions may include spending more time with you, goin out for walks, doing projects together, reminding you about your addiction when they see you back at it etc. Friends can be a really great resource to help fight your addiction to the internet, in fact maybe both parties are battling the same addiction and there is many ways to help each other out.</p>   </table>
+    </fieldset>
+</form>
 
-
+<form method="post" action="tips.php" id="fiveWays"
+style= background-color:beige;>
+    <fieldset>
+        <table> 
 <h3 style="text-align: left;"><strong><span style="color: blue; font-size: 17px;">4) Be Confident</span></strong></h3>
 <p style="text-align: left;">
-One very important topic in fighting any addiction is to have confidence in your ability to control yourself. Have a positive mindset, keep positive thoughts and do not give up on your battle. It will be much easier if you are able to keep your confidence high instead of using negative thoughts and insecurity to bring you back to your addiction. There are many different ways to help boost confidence. Remember, KEEP YOUR HEAD UP!</p>
+One very important topic in fighting any addiction is to have confidence in your ability to control yourself. Have a positive mindset, keep positive thoughts and do not give up on your battle. It will be much easier if you are able to keep your confidence high instead of using negative thoughts and insecurity to bring you back to your addiction. There are many different ways to help boost confidence. Remember, KEEP YOUR HEAD UP!</p>   </table>
+    </fieldset>
+</form>
           
-
+<form method="post" action="tips.php" id="fiveWays"
+style= background-color:beige;>
+    <fieldset>
+        <table> 
 <h3 style="text-align: left;"><strong><span style="color: blue; font-size: 17px;">5) Seek Therapy</span></strong></h3>
 <p style="text-align: left;"
    >
 I saved this option as a last resort, but that does not mean that it is a bad choice or an ineffective treatment for your addiction. Calling an addiction therapist is a wonderful resource to use while you are battling your addiction. This is a trained medical professional who has the knowledge and expertise to help you overcome your problem especially if you have exhausted all other previously mentioned options. Millions of people worldwide seek therapy for various different addictions and internet addiction is no exclusion. This is an option one should welcome instead of be ashamed of after all you are on the path to better yourself. </p>
+        </table>
+    </fieldset>
+</form>
+         
       
           
   <!-- Second Grid -->
@@ -88,7 +111,7 @@ I saved this option as a last resort, but that does not mean that it is a bad ch
         
       </div>
     </div>
-  </div>
+  
   <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Quote of the day: ---Live Life---</h1>
   </div>
@@ -103,4 +126,3 @@ I saved this option as a last resort, but that does not mean that it is a bad ch
 </body>
 
 </html>
-  

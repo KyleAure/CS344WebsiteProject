@@ -86,8 +86,6 @@ body {
     background-color: #333;
     overflow: hidden;
     z-index: 10;
-    /* Remove me if you want full nav bar*/
-    position: fixed;
 }
 
 /* Style the links inside the navigation bar */

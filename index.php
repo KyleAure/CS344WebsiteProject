@@ -9,73 +9,56 @@ ini_set('display_errors', E_ALL);
 
 <!DOCTYPE html>
 <html>
-<title>Home</title>
-<!-- Meta tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Style links -->
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/stylesheet.css">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-<!-- Script links -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/header.js"></script>
+
+<head>
+    <title>Home</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Johnny Tran">
+    <!-- Style links -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <!-- Script links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+</head>
 <!-- Include Header -->
 <?php include_once 'inc/header.php'; ?>
 
 <body>
-  </div>
-  <!-- Header -->
-  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-    <p class="w3-xlarge">Internet Addiction</p><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button></header>
-  <!-- First Grid -->
-  <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>What Is Internet Addiction?</h1>
-        <h5 class="w3-padding-32">Internet addiction is described as an impulse control disorder, which does not involve use of an intoxicating drug and is very similar to pathological gambling. Some Internet users may develop an emotional attachment to on-line friends and activities
-          they create on their computer screens. Internet users may enjoy aspects of the Internet that allow them to meet, socialize, and exchange ideas through the use of chat rooms, social networking websites, or "virtual communities." Other Internet
-          users spend endless hours researching topics of interest Online or "blogging". Blogging is a contraction of the term "Web log", in which an individual will post commentaries and keep regular chronicle of events. It can be viewed as journaling
-          and the entries are primarily textual. Similar to other addictions, those suffering from Internet addiction use the virtual fantasy world to connect with real people through the Internet, as a substitution for real-life human connection, which
-          they are unable to achieve normally.</p>
-      </div>
-      <div class="image"><img src="assets/internet_addiction.jpg" alt="Internet Addiction"></i></div>
+    <header>
+        Internet Addiction
+    </header>
+    <div class="indexBox">
+        <h1>What is Internet Addiction?</h1>
+        <p><img class="indexPic" src="assets/addiction.gif" alt="Addiction" title="Addiction" /> Internet addiction is described as an impulse control disorder, which does not involve use of an intoxicating drug and is very similar to pathological gambling. Some Internet users may develop an emotional attachment to on-line friends and activities they create on their computer screens. Internet users may enjoy aspects of the Internet that allow them to meet, socialize, and exchange ideas through the use of chat rooms, social networking websites, or "virtual communities." Other Internet users spend endless hours researching topics of interest Online or "blogging". Blogging is a contraction of the term "Web log", in which an individual will post commentaries and keep regular chronicle of events. It can be viewed as journaling and the entries are primarily textual. Similar to other addictions, those suffering from Internet addiction use the virtual fantasy world to connect with real people through the Internet, as a substitution for real-life human connection, which they are unable to achieve normally.</p>
     </div>
-  </div>
-  <!-- Second Grid -->
-  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-third w3-center"><i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i></div>
-      <div class="w3-twothird">
+
+    <div class="indexBox">
+        <h1>What Are The Effects?</h1>
+        <p>
+            Internet addiction results in personal, family, academic, financial, and occupational problems that are characteristic of other addictions. Impairments of real life relationships are disrupted as a result of excessive use of the Internet. Individuals suffering from Internet addiction spend more time in solitary seclusion, spend less time with real people in their lives, and are often viewed as socially awkward. Arguments may result due to the volume of time spent on-line. Those suffering from Internet addiction may attempt to conceal the amount of time spent on-line, which results in distrust and the disturbance of quality in once stable relationships. 
+            <br>
+            <br>
+            Some suffering from Internet addiction may create on-line personas or profiles where they are able to alter their identities and pretend to be someone other than himself or herself. Those at highest risk for creation of a secret life are those who suffer from low-self esteem feelings of inadequacy, and fear of disapproval. Such negative self-concepts lead to clinical problems of depression and anxiety.
+        </p>
+
+    </div>
+
+    <div class="indexBox">
         <h1>How Can Someone Get Help?</h1>
-        <h5 class="w3-padding-32">The first step is to determine if there is a problem. A Certified Addictions Counselor trained in identification and treatment of Internet addiction can effectively perform an assessment to determine what level of care is most appropriate. For
-          a free confidential assessment, call the Illinois Institute for Addiction Recovery at (800) 522-3784. An assessment can be completed 24 hours a day, 7 days a week. Appointments are preferred, but walk-ins are always welcome. </h5>
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <p>
+            The first step is to determine if there is a problem. A Certified Addictions Counselor trained in identification and treatment of Internet addiction can effectively perform an assessment to determine what level of care is most appropriate. For a free confidential assessment, call the Illinois Institute for Addiction Recovery at <a href="tel:800-522-3784">(800)522-3784</a>. An assessment can be completed 24 hours a day, 7 days a week.
+        </p>
     </div>
-  </div>
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-  </div>
-  <!-- Footer -->
-  <footer>
-   <?php include_once 'inc/footer.php'; ?>
-  </footer>
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-  </script>
+
+    <!-- First Grid -->
+    <!-- Second Grid -->
+    <!-- Footer -->
+    <?php include_once 'inc/footer.php'; ?>
 </body>
 
 </html>

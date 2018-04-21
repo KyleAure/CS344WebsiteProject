@@ -4,7 +4,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', E_ALL);
 
 //Other PHP includes should go here
-//comment
 
 
 ?>
@@ -22,16 +21,10 @@ ini_set('display_errors', E_ALL);
 <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 <!-- Script links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.mask.js"></script>
 <script src="js/header.js"></script>
 <!-- Include Header -->
-<div class="topnav" id="myTopnav">
-  <a href="index.php" >Home</a>
-  <a href="history.php">History</a>
-  <a href="tips.php">Tips and Tricks</a>
-  <a href="video.php">Instructional Video</a>
-  <a href="contact.php">Contact Us</a>
-  <a href="javascript:void(0);" class="icon" onclick="updateNavClass()">&#9776;</a>
-</div>
+<?php include_once 'inc/header.php'; ?>
 
 
 <body>
@@ -117,13 +110,6 @@ I saved this option as a last resort, but that does not mean that it is a bad ch
     <h1 class="w3-margin w3-xlarge">Quote of the day: ---Live Life---</h1>
   </div>
   <!-- Footer -->
-<div class="copywriteFoot" id="myFooter">
-	<br>
-	<hr>
-	<br>
-  <p>&copy; 2018 Indesicive Iguanas. No rights reserved</p>
-</div>
-
+<?php include_once 'inc/footer.php'; ?>
 </body>
-
 </html>

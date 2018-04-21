@@ -88,7 +88,7 @@ if($response->success){
     $mail->addAddress($_POST['email'], $_POST['firstname'] . " " . $_POST['lastname']);
     $mail->Subject  = 'A warm welcome from Internet Addictions';
     $mail->isHTML();
-    $mail->Body = '<h1>Internet Addictions</h1><p>You will now recieve emails from Internet Addictions.</p>';
+    $mail->Body = file_get_contents('inc/email.html');
 
     if(!$mail->send()) {
         echo 'Message was not sent.';
@@ -100,4 +100,6 @@ if($response->success){
     echo '<div id="errors"><p>Email failed to send.</p><p>Could not verify identity.</p></div>';
 }
 ?>
+
+<?php include_once 'inc/footer.php'; ?>
 </html>

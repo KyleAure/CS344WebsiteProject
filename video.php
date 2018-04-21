@@ -28,8 +28,13 @@ ini_set('display_errors', E_ALL);
     
 <!-- Include Header -->
 <?php include_once 'inc/header.php'; ?>
+
+<header>
+  Instructional Videos
+</header>
     
 <!-- Body -->
+<?php include_once 'inc/videoDescription.php'; ?>
 <?php include_once 'inc/videobody.php'; ?>
     
     <!-- Footer -->

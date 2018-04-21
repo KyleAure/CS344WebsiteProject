@@ -1,3 +1,11 @@
+<?php
+//TODO: Change reporting method after testing has been completed.
+error_reporting(E_ALL);
+ini_set('display_errors', E_ALL);
+
+//Other PHP includes should go here
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,20 +25,29 @@
 <!-- Include Header -->
 <?php include_once 'inc/header.php'; ?>
 
-<h1 class = "topHeader" id = "historyHeading">History of Internet Addiction</h1> <hr>
+<header>
+  History of Internet Addiction
+</header>
 
-<h5 class="content">
-  Originally debated as a “real thing,” it was satirically theorized as a disorder in 1995 by Dr. Ivan Goldberg, M.D. who compared its original model to pathological gambling. 
-  Since this hoax of sorts, the disorder has rapidly gained ground and has been given serious attention from many researchers, mental health counselors, and doctors as a truly debilitating disorder. 
-  Though not officially recognized as a disorder in the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV), its prevalence in American and European cultures is staggering – affecting up to 8.2% of the general population. 
-  However, some reports suggest it affects up to 38% of the general population. The widely variable difference in prevalence rates might be contributed to the fact that no true and standardized criteria has been selected for Internet Addiction Disorder. 
-  It is researched differently among scientists and mental health professionals. And, it is researched differently across ethnic cultures.
-</h5>
- 
-<div>
-  <h1>Quote of the day: ---Live Life---</h1>
+<div class="indexBox">
+  <h1>Theory of Disorder</h1>
+  <p><img class="historyPic" src="assets/ivan.jpg" alt="Dr. Ivan Goldbert" title="Dr. Ivan Goldberg"/></p>
+  <p>
+    Originally debated as a “real thing,” it was satirically theorized as a disorder in 1995 by Dr. Ivan Goldberg, M.D. who compared its original model to pathological gambling. 
+    Since this hoax of sorts, the disorder has rapidly gained ground and has been given serious attention from many researchers, mental health counselors, and doctors as a truly debilitating disorder. 
+  </p>
 </div>
-  
+
+<br>
+
+<div class="indexBox">
+  <h1>State of Internet Addition Today</h1>
+  <p>  
+    Though not officially recognized as a disorder in the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV), its prevalence in American and European cultures is staggering – affecting up to 8.2% of the general population. 
+    However, some reports suggest it affects up to 38% of the general population. The widely variable difference in prevalence rates might be contributed to the fact that no true and standardized criteria has been selected for Internet Addiction Disorder. 
+    It is researched differently among scientists and mental health professionals. And, it is researched differently across ethnic cultures.
+  </p>
+</div>
 
   <!-- Footer -->
 <?php include_once 'inc/footer.php'; ?>

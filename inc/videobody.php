@@ -1,30 +1,38 @@
-    <body>
-        <article>
+<body>
+    <article>
+        <!-- First Video -->
+        <div class="video-container">
+            <div class="video-title">Internet Addiction Overview</div>
+            <iframe class="video"
+                    src="http://www.youtube.com/embed/vOSYmLER664">
+            </iframe>
+            <h1>Video Description </h1>
+            <p class="truncate"><?php echo getDescription('vOSYmLER664');?></p>
+        </div>
 
-            <!-- First Video -->
-            <div id="video-one-container">
-                <h1 id="video-one-title">Internet Addiction Overview</h1>
-                <iframe width="420" height="315" id="video-one"
-                        src="http://www.youtube.com/embed/vOSYmLER664">
-                </iframe>
-            </div>
+        <hr>
 
-            <!-- Second Video -->
-            <div id="video-two-container">
-                <h1 id="video-two-title">What You Miss With Internet Addiction</h1>
-                <iframe width="420" height="315" id="video-two"
-                        src="http://www.youtube.com/embed/TAIxb42FjwE">
-                </iframe>
-            </div>
+        <!-- Second Video -->
+        <div class="video-container">
+            <div class="video-title">What You Miss With Internet Addiction</div>
+            <iframe class="video"
+                    src="http://www.youtube.com/embed/TAIxb42FjwE">
+            </iframe>
+            <h1>Video Description </h1>
+            <p class="truncate"><?php echo getDescription('TAIxb42FjwE');?></p>
+        </div>
 
-            <!-- Third Video -->
-            <div id="video-three-container">
-                <h1 id="video-three-title">How Smartphones Change The Way You Think</h1>
-                <iframe width="420" height="315" id="video-three"
-                        src="https://www.youtube.com/embed/pWvSwX-jq7o">
-                </iframe>
-            </div>
+        <hr>
 
-        </article>
+        <!-- Third Video -->
+        <div class="video-container">
+            <div class="video-title">How Smartphones Change The Way You Think</div>
+            <iframe class="video"
+                    src="https://www.youtube.com/embed/pWvSwX-jq7o">
+            </iframe>
+            <h1>Video Description </h1>
+            <p class="truncate"><?php echo getDescription('pWvSwX-jq7o');?></p>
+        </div>
 
-    </body>
+    </article>
+</body>

@@ -100,4 +100,6 @@ if($response->success){
     echo '<div id="errors"><p>Email failed to send.</p><p>Could not verify identity.</p></div>';
 }
 ?>
+
+<?php include_once 'inc/footer.php'; ?>
 </html>

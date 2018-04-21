@@ -41,8 +41,8 @@ ini_set('display_errors', E_ALL);
         <h1>What Are The Effects?</h1>
         <p>
             Internet addiction results in personal, family, academic, financial, and occupational problems that are characteristic of other addictions. Impairments of real life relationships are disrupted as a result of excessive use of the Internet. Individuals suffering from Internet addiction spend more time in solitary seclusion, spend less time with real people in their lives, and are often viewed as socially awkward. Arguments may result due to the volume of time spent on-line. Those suffering from Internet addiction may attempt to conceal the amount of time spent on-line, which results in distrust and the disturbance of quality in once stable relationships. 
-            <br>
-            <br>
+        </p>
+        <p>
             Some suffering from Internet addiction may create on-line personas or profiles where they are able to alter their identities and pretend to be someone other than himself or herself. Those at highest risk for creation of a secret life are those who suffer from low-self esteem feelings of inadequacy, and fear of disapproval. Such negative self-concepts lead to clinical problems of depression and anxiety.
         </p>
 

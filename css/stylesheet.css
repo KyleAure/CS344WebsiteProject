@@ -1,7 +1,8 @@
-/* Tristin's videobody.php CSS */
+/* Tristin's video.php CSS */
 #video-one-container{
     background-color: aliceblue;
-    padding: 3em;
+    padding: 1em;
+    padding-top: 3em;
     margin: auto;
     width: 90%;
 }
@@ -45,9 +46,43 @@
     margin: auto;
 }
 
+/*Johnny's styling*/
+*{
+    font-family: Courier, sans-serif;
+    font-style: italic;
+    color: #1d1e1e;
+}
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.5em;
+}
+
+body, html {
+    min-height: 100%;
+}
+.indexPic {
+    float:right;
+    max-width: 100%;
+    height: auto;
+    width: auto
+}
+.indexBox {
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.24em;
+}
+
+body {
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*Kyle's Header Styling header.php*/
 /* Add a black background color to the top navigation */
 .topnav {
+    opacity: 0.7;
     background-color: #333;
     overflow: hidden;
     z-index: 10;

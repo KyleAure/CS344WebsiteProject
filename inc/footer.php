@@ -1,6 +1,4 @@
 <div class="copywriteFoot" id="myFooter">
-	<br>
-	<hr>
-	<br>
-  <p>&copy; 2018 Indesicive Iguanas. No rights reserved</p>
+  <?php $date = new DateTime('2018-04-23'); ?>
+  &copy; 2018 Indesicive Iguanas. No rights reserved. Updated: <?php echo $date->format("Y-m-d") ?>
 </div>

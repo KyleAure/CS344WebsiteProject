@@ -37,7 +37,7 @@ ini_set('display_errors', E_ALL);
 <?php include_once 'inc/videoDescription.php'; ?>
 <?php include_once 'inc/videobody.php'; ?>
     
-    <!-- Footer -->
+<!-- Footer -->
 <?php include_once 'inc/footer.php'; ?>
-
+</body>
 </html>

@@ -9,8 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 ?>
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 <title>Contact Us</title>
 <!-- Meta tags -->
@@ -28,33 +27,32 @@ use PHPMailer\PHPMailer\Exception;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/header.js"></script>
 </head>
-    
+
+<!-- Header -->
 <?php include 'inc/header.php'; ?>
 
-<body>
-    <div class="bannerimage">
-        <img src="assets/bannerimage1.jpg" onload="this.width=screen.width;" alt="bannerimage1">
-        <h1>WELCOME!</h1>
-        <h2>
-            <?php
-                echo $_POST['firstname'] . " " . $_POST['lastname'];
-            ?>
-        </h2>
+<div class="bannerimage">
+    <img src="assets/bannerimage1.jpg" onload="this.width=screen.width;" alt="bannerimage1">
+    <h1>WELCOME!</h1>
+    <h2>
+        <?php
+            echo $_POST['firstname'] . " " . $_POST['lastname'];
+        ?>
+    </h2>
+</div>
+<div class="confirmRegistration">
+    <h1>Your registration was successful!</h1>
+    <p>We will be reaching out to you shortly at <?php echo $_POST['email']?> with more information </p>
+    <p>In the mean time check us out on our social media accounts.</p>
+
+    <div class="socialmedia">
+        <ul>
+            <li><a href="https://www.facebook.com/" id="facebook"><img alt="facebook" src="assets/socialmedia/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/" id="instagram"><img alt="instagram" src="assets/socialmedia/instagram.png"></a></li>
+            <li><a href="https://twitter.com/" id="twitter"><img alt="twitter" src="assets/socialmedia/twitter.png"></a></li>
+        </ul>
     </div>
-    <div class="confirmRegistration">
-        <h1>Your registration was successful!</h1>
-        <p>We will be reaching out to you shortly at <?php echo $_POST['email']?> with more information </p>
-        <p>In the mean time check us out on our social media accounts.</p>
-    
-        <div class="socialmedia">
-            <ul>
-                <li><a href="https://www.facebook.com/" name="facebook"><img src="assets/socialmedia/facebook.png"></a></li>
-                <li><a href="https://www.instagram.com/" name="instagram"><img src="assets/socialmedia/instagram.png"></a></li>
-                <li><a href="https://twitter.com/" name="twitter"><img src="assets/socialmedia/twitter.png"></a></li>
-            </ul>
-        </div>
-    </div>
-</body>
+</div>
 
 <?php
 //doublecheck captcha
@@ -102,4 +100,5 @@ if($response->success){
 ?>
 
 <?php include_once 'inc/footer.php'; ?>
+</body>
 </html>

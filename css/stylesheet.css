@@ -1,40 +1,25 @@
-/* Genneral Formatting*/
-/*Johnny's styling*/
+/* Genneral Formatting */
 *{
     font-family: Courier, sans-serif;
-    font-style: italic;
+    font-size: 1.5vw;
+    /*font-style: italic;*/
     color: #1d1e1e;
 }
 
 p{
     text-indent: 50px;
+    font-size: 1.5vw;
+    padding: 5px;
 }
 
 header {
     text-align: center;
     font-weight: bold;
-    font-size: 5.5em;
+    font-size: 5vw;
 }
 
 body, html {
     min-height: 100%;
-}
-.indexPic {
-    float:right;
-    max-width: 100%;
-    height: auto;
-    width: auto
-}
-
-.historyPic {
-    float: right;
-    height: 50%;
-    width: 50%;
-}
-.indexBox {
-    margin: 20px;
-    padding: 20px;
-    font-size: 1.24em;
 }
 
 body {
@@ -43,29 +28,92 @@ body {
     background-size: cover;
 }
 
+/* Boxes in body formatting*/
+.indexBox h1{
+    font-size: 3vw;
+}
+
+.indexBox {
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+.tipsSecondaryHeader{
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 800px){
+    p { font-size: 12px; }
+    a { font-size: 12px;}
+    .indexBox h1{ font-size: 16px; }
+    .indexBox{ font-size: 12px; }
+    .tipsSecondaryHeader{ font-size: 20px; font-weight: 600; }
+}
+
+/* Picture formatting */
+.indexPic {
+    float:right;
+    max-width: 100%;
+    width: 45%;
+    padding: 10px;
+}
+
+.historyPic {
+    float: right;
+    width: 45%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .historyPic{
+        float: left;
+        width: 90%;
+    }
+
+    .indexPic{
+        float: left;
+        width: 90%;
+    }
+}
+
 /* Tristin's video.php CSS */
 .video-container{
     background-color: aliceblue;
     padding: 1em;
+    margin-top: 20px;
     margin: auto;
     width: 90%;
 }
 
-.truncate{
-    height: 20vh;
-    overflow: scroll;
+.video-title{
+    font-size: 3vw;
+    color: dimgrey;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
 }
 
-.video-title{
-    font-size: 2em;
-    color: dimgrey;
-    margin: auto;
-}
 .video{
     background-color: lightgray;
     width: 100%;
     height: 50vh;
     margin: 0 auto;
+}
+
+.video-container h1{
+    font-size: 2vw;
+}
+
+.truncate{
+    height: 20vh;
+    padding: 10px 30px 0px;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 800px){
+    .video-title{ font-size: 18px; }
+    .video-container h1{ font-size: 16px; }
 }
 
 /*Kyle's Header Styling header.php*/
@@ -85,7 +133,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2vw;
 }
 
 /* Change the color of links on hover */
@@ -96,7 +144,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: #4CAF50;
+    background-color: cadetblue;
     color: white;
 }
 
@@ -113,6 +161,7 @@ Show the link that contains should open and close the topnav (.icon) */
       float: right;
       display: block;
     }
+    .topnav a{ font-size: 16px; }
 }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
@@ -150,6 +199,7 @@ table {
     width: 90%;
     margin: 0 auto;
  }
+
  table tbody td{
     vertical-align: top;
  }
@@ -162,7 +212,7 @@ table {
     padding: 0.25em;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.5vw;
  }
  fieldset {
     margin: 1em auto;
@@ -173,16 +223,17 @@ table {
     margin-top: 0.5em;
  }
  form input[type="text"], form input[type="email"], form input[type="tel"], form select {
-     font-size: 16px;
-     height: 24px;
-     padding: 3px;
+    font-size: 1.5vw;
+    height: 24px;
+    padding: 3px;
  }
  form select {
-     height: 30px;
+    height: 30px;
  }
- #firstname, #lastname, #email, #phonenumber, #references  { 
-     width: 100% }
- 
+ #firstname, #lastname, #email, #phonenumber, #references  { width: 90% }
+
+ #references{ box-shadow: 0 0 5px cornflowerblue; }
+
  .box {
     border: 1pt solid #9E9E9E;
     padding: 0.5em;
@@ -209,12 +260,13 @@ table {
 }
 
  .highlight {
-     background-color: #FFE0B2;
- }    
+    background-color: #FFE0B2;
+ }
+
  .error {
-     background: #FFCDD2 url('../assets/error.png') no-repeat 98% center;
-     box-shadow: 0 0 5px #FF5252;
-     border-color: #FF1744;    
+    background: #FFCDD2 url('../assets/error.png') no-repeat 98% center;
+    box-shadow: 0 0 5px #FF5252;
+    border-color: #FF1744;    
  }
  
  .button {
@@ -223,7 +275,7 @@ table {
    border-radius: 3px;
    height: 32px;
    color: black;
-   font-size: 14px;
+   font-size: 1.5vw;
    background: #FF9100;
    padding: 5px 20px 5px 20px;
    text-decoration: none;
@@ -233,6 +285,13 @@ table {
    background: #FFAB40;
    text-decoration: none;
  }
+
+ @media screen and (max-width: 800px){
+    label {font-size: 12px;}
+    .box{font-size: 12px;}
+    form input[type="text"], form input[type="email"], form input[type="tel"], form select { font-size: 12px; }
+    .button { font-size: 12px; }
+}
 
  /*Kyle's styling for contact form errors contact.php*/
  #errors{
@@ -245,15 +304,20 @@ table {
  }
  #errors p{
     color: black;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
  }
  #errorMessages p{
      color: black;
-     font-size: 16px;
+     font-size: 1.5vw;
      padding: 5px;
      font-weight: normal;
  }
+
+ @media screen and (max-width: 800px){
+    #errors p{ font-size: 12px; }
+    #errorMessages p{ font-size: 12px; }
+}
   
 /*Kyle's styling for submission form submit.php*/
 .bannerimage img{
@@ -315,30 +379,28 @@ table {
 }
 
 .socialmedia img{
-    height: 32px;
-    width: 32px;
+    height: 64px;
+    width: 64px;
 }
 
 @media screen and (max-width: 600px) {
-    .confirmRegistration h1{
-        font-size: 24px;
-    }
-    .confirmRegistration p{
-        font-size: 12px;
-    }
+    .confirmRegistration h1{ font-size: 24px; }
+    .confirmRegistration p{ font-size: 12px; }
 }
 /*Rhett CSS*/
-
 .copywriteFoot{
-font-size: 20px;
-text-align: center;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    border-top: double;
+}
+
+@media screen and (max-width: 600px){
+    .copywriteFoot{ font-size: 12px; }
 }
 .topHeader{
     padding-top: 40px
 } 
 
-/*Kyle's formatting for Tips*/
-.tipsSecondaryHeader{
-    font-size: 3em;
-}
 

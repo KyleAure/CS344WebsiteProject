@@ -1,3 +1,4 @@
+<!-- Error printout section -->
 <div id="errors">
     <p>
         Please fix the following errors:
@@ -6,14 +7,15 @@
 
     </div>
 </div>
-<!-- submit.php -->
+
+<!-- Form -->
 <form method="post" action="submit.php" id="contactForm">
     <fieldset>
         <legend>Contact Us</legend>
         <table>
             <tr>
                 <td>
-                    <label>First Name</lable>
+                    <label>First Name</label>
                 </td>
                 <td>
                     <input type="text" name="firstname" id="firstname" class="required hilightable" />
@@ -21,7 +23,7 @@
             </tr>
             <tr>
                 <td>
-                    <label>Last Name</lable>
+                    <label>Last Name</label>
                 </td>
                 <td>
                     <input type="text" name="lastname" id="lastname" class="required hilightable" />
@@ -29,7 +31,7 @@
             </tr>
             <tr>
                 <td>
-                    <label>Email</lable>
+                    <label>Email</label>
                 </td>
                 <td>
                     <input type="email" name="email" id="email" placeholder="john.doe@gmail.com" class="required hilightable" />
@@ -37,7 +39,7 @@
             </tr>
             <tr>
                 <td>
-                    <label>Phone</lable>
+                    <label>Phone</label>
                 </td>
                 <td>
                     <input type="tel" name="phonenumber" id="phonenumber" placeholder="(123)456-7890" class="hilightable" />
@@ -88,7 +90,7 @@
                     <div class="customcenter">
                     <div class="g-recaptcha centered" data-sitekey="6LePZVMUAAAAAEjWc_BX58W9CM9LGcE1eBXPMv_G"></div>
                     </div>
-                <td>
+                </td>
             </tr>
             <tr>
                 <td>

@@ -9,10 +9,13 @@ ini_set('display_errors', E_ALL);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Tips and Tricks</title>
 <!-- Meta tags -->
 <meta charset="UTF-8">
+<meta name="author" content="Amel Nukic">
+<meta name="description" content="Tips and tricks of ending internet addiction.">
+<meta name="keywords" content="Internet, addiction, tips, advice, phones, life, time, boredom">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Style links -->
 <link rel="stylesheet" href="css/reset.css">
@@ -23,11 +26,13 @@ ini_set('display_errors', E_ALL);
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.mask.js"></script>
 <script src="js/header.js"></script>
+
 <!-- Include Header -->
 <?php include_once 'inc/header.php'; ?>
 
-
-<body>
+<div class="bannerimage">
+    <img src="assets/help.jpg" onload="this.width=screen.width;" alt="Clinical help photo">
+</div>
 
 <header>
   How Can Someone Get Help?
@@ -37,7 +42,7 @@ ini_set('display_errors', E_ALL);
   <p>
     The first step is to determine if there is a problem. 
     A Certified Addictions Counselor trained in identification and treatment of Internet addiction can effectively perform an assessment to determine what level of care is most appropriate. 
-    For a free confidential assessment, call the Illinois Institute for Addiction Recovery at (800) 522-3784. An assessment can be completed 24 hours a day, 7 days a week. 
+    For a free confidential assessment, call the Illinois Institute for Addiction Recovery at <a href="tel:800-522-3784">(800)522-3784</a>. An assessment can be completed 24 hours a day, 7 days a week. 
     Appointments are preferred, but walk-ins are always welcome.
   </p>
 </div>
@@ -78,7 +83,7 @@ ini_set('display_errors', E_ALL);
 <hr>
 
 <div class="indexBox">
-  <h1>3. Tell your friends</h1>
+  <h1>3. Tell Your Friends</h1>
   <p>
     One great way to help yourself with internet addiction is to call for the help of your friends. 
     Tell them about your problem and see if they can figure out a solution for you. 

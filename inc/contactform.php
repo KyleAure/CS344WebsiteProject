@@ -11,7 +11,7 @@
 <!-- Form -->
 <form method="post" action="submit.php" id="contactForm">
     <fieldset>
-        <legend>Contact Us</legend>
+        <legend>Request for Information Form</legend>
         <table>
             <tr>
                 <td>

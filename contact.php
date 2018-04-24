@@ -34,6 +34,8 @@
     onload="this.width=screen.width;" style="border:0" allowfullscreen></iframe>
 </div>
 
+<header> Contact Us</header>
+
 <!-- Start Body -->
 <?php include 'inc/contactform.php'; ?>
 <script src="js/contactform.js"></script>

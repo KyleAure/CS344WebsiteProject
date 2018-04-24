@@ -34,11 +34,11 @@
 <div class="indexBox">
     <h1>What is Internet Addiction?</h1>
     <p>
-        <img class="indexPic" src="assets/addiction.gif" alt="Addiction" title="Addiction Graphic" /> 
+        <img class="indexPic" src="assets/addiction.gif" alt="Animated man on computer" title="Computer Addiction" /> 
         Internet addiction is described as an impulse control disorder, which does not involve use of an intoxicating drug and is very similar to pathological gambling. Some Internet users may develop an emotional attachment to on-line friends and activities they create on their computer screens. Internet users may enjoy aspects of the Internet that allow them to meet, socialize, and exchange ideas through the use of chat rooms, social networking websites, or "virtual communities."
     </p>
     <p>
-        Other Internet users spend endless hours researching topics of interest Online or "blogging". Blogging is a contraction of the term "Web log", in which an individual will post commentaries and keep regular chronicle of events. It can be viewed as journaling and the entries are primarily textual. Similar to other addictions, those suffering from Internet addiction use the virtual fantasy world to connect with real people through the Internet, as a substitution for real-life human connection, which they are unable to achieve normally.</p>
+        Other Internet users spend endless hours researching topics of interest Online or "blogging". Blogging is a contraction of the term "Web log", in which an individual will post commentaries and keep regular chronicle of events. It can be viewed as journaling and the entries are primarily textual. Similar to other addictions, those suffering from Internet addiction use the virtual fantasy world to connect with real people through the Internet, as a substitution for real-life human connection, which they are unable to achieve normally.
     </p>
 </div>
 

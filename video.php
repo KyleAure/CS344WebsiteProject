@@ -1,11 +1,8 @@
 <!-- Tristin Harvell's video.php page -->
 <?php
 //TODO: Change reporting method after testing has been completed.
-error_reporting(E_ALL);
-ini_set('display_errors', E_ALL);
-
-//Other PHP includes should go here
-
+//error_reporting(E_ALL);
+//ini_set('display_errors', E_ALL);
 ?>
 
 <!DOCTYPE html>

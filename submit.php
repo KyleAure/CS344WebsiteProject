@@ -1,7 +1,7 @@
 <?php
 //TODO: Change reporting method after testing has been completed.
-error_reporting(E_ALL);
-ini_set('display_errors', E_ALL);
+//error_reporting(E_ALL);
+//ini_set('display_errors', E_ALL);
 
 //mailer classes
 use PHPMailer\PHPMailer\PHPMailer;
